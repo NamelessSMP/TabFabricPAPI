@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "tabfabricpapi",
+	"version": "${version}",
+	"name": "TabFabricPAPI",
+	"description": "Adds support for some PlaceholderAPI placeholders to Tab on Fabric",
+	"authors": [
+		"TheCatRiX"
+	],
+	"contact": {
+		"sources": "https://github.com/TheCatRiX/TabFabricPAPI"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tabfabricpapi/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"ru.thecatrix.tabfabricpapi.TabFabricPAPI"
+		]
+	},
+	"mixins": [
+		"tabfabricpapi.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.10",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"tab": "*",
+		"placeholder-api": "*"
+	},
+	"recommends": {
+		"spark": "*",
+		"melius-vanish": "*"
+	}
+}
